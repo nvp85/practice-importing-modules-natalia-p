@@ -1,5 +1,10 @@
 function addTask(tasks, task) {
+    if (tasks.includes(task)) {
+        console.log(`The task "${task}" is already in the list.`);
+        return;
+    }
     tasks.push(task);
+    console.log(`The task "${task}" is added successfully.`)
 }
 
 function listTask(tasks) {
