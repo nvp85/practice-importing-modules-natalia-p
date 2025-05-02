@@ -4,8 +4,8 @@ let path = require('path');
 
 
 // path to the file
-const pathFile = path.join(path.resolve(__dirname), 'tasks.json');
-console.log(path.resolve(__dirname));
+const pathFile = path.join(__dirname, 'tasks.json');
+//console.log(path.resolve(__dirname, 'tasks.json'));
 
 let tasks = taskHandler.loadTasks(pathFile);
 console.log("Existing tasks:");
